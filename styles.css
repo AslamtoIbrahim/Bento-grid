@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(273, 47%, 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 200px));
+    grid-template-rows: 280px repeat(2, minmax(100px, 200px));
+    font-size: 18px;
+    gap: 1rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.item {
+    border-radius: 0.5rem;
+    padding: 1em;
+}
+
+
+.social {
+    background-color: hsl(256, 67%, 59%);
+    grid-column: 2/4;
+    grid-row: 1;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-family: 'DMsans-Regular', sans-serif;
+    padding: 1em;
+}
+
+.social .ten {
+    color: hsl(39, 100%, 71%);
+}
+
+.social .fast {
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url('assets/fonts/static/DMSans-Regular.ttf');
+}
+
+.social .title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.social img {
+    width: 50%;
+}
+
+.social .text {
+    color: hsl(254, 88%, 90%);
+    font-weight: 100;
+    margin-top: 0rem;
+    font-size: 1em;
+}
+
+.manage {
+    background-color: hsl(0, 0%, 100%);
+    grid-row: 2;
+    grid-column: 2;
+    padding: 1em 1em 0;
+    overflow: hidden;
+}
+
+.manage img {
+    width: 250px;
+    height: fit-content;
+}
+
+.manage p {
+    font-family: 'DMSans-VariableFont', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin: 0.5em 0;
+}
+
+.maintain {
+    background-color: hsl(39, 100%, 71%);
+    grid-row: 2;
+    grid-column: 3;
+    overflow: hidden;
+}
+
+.maintain p {
+    font-family: 'DMSans-VariableFont', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+.maintain img {
+    width: 90%;
+    height: fit-content;
+
+}
+
+@font-face {
+    font-family: 'DMSand-Medium';
+    src: url('assets/fonts/static/DMSans-Medium.ttf');
+}
+
+.schedule {
+    background-color: hsl(254, 88%, 90%);
+    grid-row: 1/3;
+    grid-column: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'DMSand-Medium';
+    overflow: hidden;
+    padding: 1.5rem 1rem;
+}
+
+.schedule .title {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 0.9;
+}
+
+.schedule img {
+    width: 280px;
+}
+
+.schedule p {
+    font-size: 0.8em;
+    margin: 0;
+    line-height: 1.2;
+}
+
+
+
+.growfollowers {
+    background-color: hsl(256, 67%, 59%);
+    grid-column: 3/5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.growfollowers img {
+    width: 40%;
+    height: fit-content;
+}
+
+.growfollowers p {
+    font-size: 1.4em;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    padding: 0 0.5em;
+    line-height: 1;
+}
+
+.faster {
+    background-color: hsl(0, 0%, 100%);
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.faster .title {
+    font-size: clamp(1em, 5vw, 2.5em);
+    font-weight: 600;
+    margin: 0.2em 0 0;
+}
+
+.faster .text {
+    font-size: 0.8em;
+
+}
+
+.faster img {
+    width: 70%;
+    height: fit-content;
+}
+
+.create {
+    background-color: hsl(31, 66%, 93%);
+    grid-column: 1;
+    grid-row: 1/3;
+    font-size: 2em;
+    line-height: 0.8;
+    font-weight: 500;
+    letter-spacing: -2.9px;
+    padding: 2rem 1rem;
+    font-family: "DMSans", sans-serif;
+    height: fit-content;
+}
+
+.create span {
+    font-style: italic;
+    color: hsl(256, 67%, 59%);
+}
+
+.create img {
+    width: 100%;
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url('assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
+}
+
+.write {
+    background-color: hsl(39, 100%, 71%);
+    grid-column: 1;
+    grid-row: 2/4;
+    margin-top: 4em;
+}
+
+@font-face {
+    font-family: 'DMSans-VariableFont';
+    src: url('assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
+}
+
+.write p {
+    font-family: 'DMSans-VariableFont', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    margin-top: 0.5em;
+
+}
+
+.write img {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:700px) {
+
+    .container {
+        margin: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .item {
+        padding: 2rem;
+    }
+
+    .social .title {
+        font-size: 2.5em;
+        line-height: 1;
+    }
+    
+    .social .text {
+        font-size: 1em;
+    }
+
+    .manage img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .manage p {
+        margin-bottom: 0.1em;
+    }
+
+
+    .maintain p {
+        margin-top: 0em;
+    }
+
+    .maintain img {
+        width: 50%;
+        margin-bottom: -2.5em;
+
+    }
+
+    .schedule {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .schedule img {
+        width: 100%;
+    }
+
+    .schedule p {
+        text-align: center;
+    }
+
+    .growfollowers {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .growfollowers img {
+        width: 60%;
+    }
+
+    .growfollowers p {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+
+    .faster .title {
+        font-size: clamp(2em, 7vw, 3em);
+
+    }
+
+    .faster img {
+        width: 50%;
+        height: fit-content;
+        margin: 1em 0;
+    }
+
+    .create {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .create img {
+        width: 75%;
+        height: fit-content;
+    }
+
+    .write {
+        height: fit-content;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .write img {
+        width: 75%;
+        height: fit-content;
+    }
+
+
+
+
+
+}
